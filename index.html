@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Professional Resume Builder</title>
+  <link rel="stylesheet" href="resume.css">
+</head>
+<body>
+  <header>
+    <h1>Professional Resume Builder</h1>
+  </header>
+  <div class="container">
+    <center>
+      <form id="resume-form">
+        <h1>Personal Information</h1>
+        <label for="name">Name</label>
+        <input type="text" name="name" id="name" placeholder="Name" required>
+        
+        <label for="age">Age</label>
+        <input type="number" name="age" id="age" placeholder="Age" required>
+        
+        <label for="education">Qualification</label>
+        <input type="text" name="education" id="education" placeholder="Qualification" required>
+        
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" placeholder="Email" required>
+        
+        <label for="image-upload">Image</label>
+        <input type="file" id="image-upload" accept="image/*">
+        
+        <label>Gender</label>
+        <input type="radio" name="gender" value="male" checked> Male
+        <input type="radio" name="gender" value="female"> Female
+        
+        <label for="address">Address</label>
+        <textarea name="address" id="address" placeholder="Address" required></textarea>
+        
+        <label for="phone">Phone Number</label>
+        <input type="tel" name="phone" id="phone" placeholder="Phone Number" required>
+        
+        <label>Objective</label>
+        <textarea name="objective" id="objective" placeholder="Your career objective"></textarea>
+
+        <label>Skills</label>
+        <input type="text" id="skill-input" placeholder="Enter a skill">
+        <button type="button" id="add-skill-btn">Add Skill</button>
+        <div id="skills-list"></div>
+        
+        <label>Work Experience</label>
+        <textarea id="work-experience" placeholder="Enter your work experience"></textarea>
+        
+        <button type="button" id="generateResume">Generate Resume</button>
+      </form>
+    </center>
+  </div>
+  
+  <footer class="footer">
+    <p>© 2024 Professional Resume Builder</p>
+    <span>create by Abdul Uzair</span>
+  </footer>
+  
+  <script src="resume.js"></script>
+</body>
+</html>
